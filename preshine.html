@@ -1,0 +1,238 @@
+<!doctype html>
+<head>
+	<title>Preshine</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="leaflet/leaflet.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<style>
+		body {
+    		padding: 0;
+    		margin: 0;
+		}
+		html, body, #map {
+    		height: 95%;
+		}
+		#notmap {
+			margin: 10px;
+		}
+		.abcpopup {
+			font-size: 200%;
+		}
+		input {
+  			font-size: 200%;
+  			margin-left: 20px;
+  			font-family: 'Arial';
+		}
+		a.removeme {
+			color: red;
+		}
+		#titre {
+			display: inline;
+			font-size: 170%;
+			color: #4C4C4C;
+			font-family: 'Arial';
+		}
+	</style>
+</head>
+
+<body>
+	<div id="map"></div>
+		
+	<div id="notmap">
+		<p id="titre"></p>
+		<!-- pour sauvegarder le geojson -->
+			<span id="html-options">
+				<input type="submit" id="btnSave" value="Sauvegarder" />
+			</span>
+	</div>
+	
+	<script src="leaflet/leaflet.js" type='text/javascript'></script>
+	<script src="js/jquery-2.1.3.js" type='text/javascript'></script>
+	<script src="js/FileSaver.js" type='text/javascript'></script>
+	<script src="js/h5utils.js" type='text/javascript'></script>
+	
+	<script>
+	
+		// nom du village
+		var name_village = "thame";
+		
+		// emprise de l'image
+		var imageBounds = [[27.8214456561946548, 86.6414939298643105], [27.8400509434464567, 86.6563722438351505]];
+	
+		// nom de la variable stockant les bâtiments dans le localStorage
+		var name_localbat = "batiments_" + name_village;
+		
+		// nom de l'image de fond
+		var name_image = 'data/' + name_village + '_wgs84_reduit50.png';
+	
+		// icones des points
+		var pointIcon = L.icon({
+    		iconUrl: 'icons/bluecircle.png',
+    		iconSize:     [50, 50], // size of the icon
+    		iconAnchor:   [25, 25], // point of the icon which will correspond to marker's location
+    		popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+		});
+        
+		// texte du lien pour supprimer un bâtiment
+		var linkSuppr = "Supprimer bâtiment";
+		// texte du lien pour fermer le popup
+		var linkClose = "Fermer fenêtre";
+	
+		// servira pour ajouter des batiments
+		var geojsonBat = {
+			"type": "Feature",
+			"properties": {
+        		"Village": name_village,
+        		"Foyers": "W0E0S0",
+        		"Notes": "notes"
+    		},
+    		"geometry": {
+        		"type": "Point",
+        		"coordinates": [0, 0]
+			}
+		};
+		
+		// pour afficher le titre de la page : village de ...
+		document.querySelector('#titre').innerHTML = 'Village de ' + name_village;
+			
+		// bouton pour sauvegarder sur le disque le geojson stocké dans le local storage
+      plop = document.getElementById('btnSave');
+      plop.addEventListener('click', function (e) {
+         var json = localStorage.getItem(name_localbat);
+			var blob = new Blob([json], {type: "text/plain;charset=utf-8"});
+			var name_json = name_localbat + ".json";
+			saveAs(blob, name_json);
+      });
+
+		// affiche la carte en zoomant vaguement au bon endroit (il y aura un zoom automatique sur les batiments présents)	
+   	var map = L.map('map').setView([27.847327, 86.641000], 13);
+
+		// affichage de la couche geojson de batiments
+		var local_bat = JSON.parse(localStorage.getItem(name_localbat));
+      var batiments = L.geoJson(local_bat, {
+      	// quand on clique sur un batiment
+			onEachFeature: featurePopup
+		})
+
+		// au cas où il y a un seul batiment, zoome autour de ce batiment
+		if (batiments.getBounds().getNorthEast().lat == batiments.getBounds().getSouthWest().lat) {
+			console.log("un seul bat");
+			var nord = batiments.getBounds().getNorthEast().lat + 0.001;
+			var sud = batiments.getBounds().getNorthEast().lat - 0.001;
+			var ouest = batiments.getBounds().getNorthEast().lng - 0.001;
+			var est = batiments.getBounds().getNorthEast().lng + 0.001;
+			map.fitBounds([[sud, ouest],[nord,est]]);
+			//map.fitBounds(imageBounds);
+		// sinon, zoome sur tous les batiments
+		} else {
+			console.log("plusieurs bat");
+			map.fitBounds(batiments.getBounds());
+			console.log(batiments.getBounds().getNorthEast().lat)
+			console.log(batiments.getBounds().getSouthWest().lat)
+		}
+		
+		// affichage de l'image PNG, en renseignant son emprise
+		L.imageOverlay(name_image, imageBounds).addTo(map);
+		
+		// ajoute la couche de batiments à la carte
+		map.addLayer(batiments);
+
+		// quand on clique sur la carte, appelle la fonction pour créer un bâtiment
+		map.on('click', onMapClick);
+		
+		// pour chaque batiment
+      function featurePopup(feature, layer) {
+      	// définit l'icône
+      	layer.setIcon(pointIcon);
+      	// contenu du popup (Foyers), un foyer par ligne
+			var foyers = String(feature.properties.Foyers);
+			foyers = foyers.split(";");
+			var popupContentFoyers = "";
+			for (i = 0; i < foyers.length; i++) {
+    			popupContentFoyers += foyers[i] + "<br>";
+    		};
+    		popupContentFoyers = "<div id=\"editableF\" contenteditable=\"true\"><p style=\"background-color:lightgray\">" + popupContentFoyers + "</p></div>";
+    		
+    		// champ texte libre
+    		var popupContentTxt = String(feature.properties.Notes);
+    		popupContentTxt = "<div id=\"editableN\" contenteditable=\"true\"<p style=\"background-color:lightsteelblue\">" + popupContentTxt + "</p></div>";
+    		
+    		// contenu des coordonnées
+    		var popupContentCoord = String(feature.geometry.coordinates);
+    		lon = popupContentCoord.split(',')[0];
+    		lat = popupContentCoord.split(',')[1];
+    		// pour ne garder que 6 chiffres après la virgule (9 - 2 avant la virgule - le séparateur de décimales)
+    		popupContentCoord = "<p>" + lon.substr(0, 9) + ', ' + lat.substr(0, 9) + "</p>";
+			
+			// affiche le contenu de la popup, et un lien pour supprimer le bâtiment
+			var div_popup = L.DomUtil.create('div', 'abcpopup');            
+         div_popup.innerHTML = popupContentFoyers + popupContentTxt + popupContentCoord + '<a class="removeme">' + linkSuppr + '</a>' + '<br><br><a class="closeme">' + linkClose + '</a>';
+         // quand on clique sur ce lien, ferme la popup, supprime le batiment
+         $('a.removeme', div_popup).on('click', function() {
+            console.log(batiments._layers);
+            // si c'est le dernier batiment restant : ne le supprime pas
+            if (Object.getOwnPropertyNames(batiments._layers).length == 1) {
+            	alert("C'est le dernier batiment... ne le supprimez pas !");
+            // sinon, le supprime
+            } else {
+            	map.closePopup();
+            	batiments.removeLayer(layer);
+            	// stocke les modifs
+					local_bat = JSON.stringify(batiments.toGeoJSON());
+					localStorage.setItem(name_localbat, local_bat);
+            }
+         });
+         // quand on clique sur le lien, ferme la popup
+         $('a.closeme', div_popup).on('click', function() {
+         	map.closePopup();
+         });
+
+			layer.bindPopup(div_popup);
+			
+			// pour sauvegarder les changements fait par l'utilisateur dans le texte du popup 
+			layer.on("popupclose", function (e) {
+				var popup = layer.getPopup();
+				// récupère le texte de la popup pour la partie foyers
+				var newContentFoyers = popup.getContent().childNodes[0].textContent;
+				// insère un ";" tous les 6 caractères, pour séparer chaque foyer
+				newContentFoyers = newContentFoyers.chunk(6).join(';');
+				// remet la nouvelle valeur du foyer dans les propriétés du bâtiment
+				feature.properties.Foyers = newContentFoyers;
+				// récupère le texte de la popup pour la partie notes
+				var newContentNotes = popup.getContent().childNodes[1].textContent;
+				// remet la nouvelle valeur des notes dans les propriétés du bâtiment
+				feature.properties.Notes = newContentNotes;
+				// stocke les modifs
+				local_bat = JSON.stringify(batiments.toGeoJSON());
+				localStorage.setItem(name_localbat, local_bat)
+			})
+		}
+		
+		
+		// pour ajouter des nouveaux batiments en cliquant sur la carte       
+		function onMapClick(e) {
+			// récupère lat et long du point qui a été cliqué
+			var lat = e.latlng.lat;
+			var lng = e.latlng.lng;
+			// renseigne les coordonnées du bâtiment de base (var geojsonBat)
+			geojsonBat["geometry"]["coordinates"] = [lng, lat]
+			// ajoute ce batiment à la couche batiments
+			batiments.addData(geojsonBat);
+			// stocke les modifs en local storage
+			local_bat = JSON.stringify(batiments.toGeoJSON());
+			localStorage.setItem(name_localbat, local_bat);
+		}
+
+
+		// pour insérer un caractère tous les n caractères (foyers)
+		String.prototype.chunk = function(n) {
+		    var ret = [];
+		    for(var i=0, len=this.length; i < len; i += n) {
+		       ret.push(this.substr(i, n))
+		    }
+		    return ret
+		};
+
+	</script>
+	
+</body>

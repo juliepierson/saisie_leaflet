@@ -1,0 +1,21 @@
+var test_bat_thame = {
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "Village": "THA", "Batiment": "013", "X_WGS84": 86.646477, "Y_WGS84": 27.837775 }, "geometry": { "type": "Point", "coordinates": [ 86.646476877953049, 27.837775118633548 ] } },
+{ "type": "Feature", "properties": { "Village": "THA", "Batiment": "012", "X_WGS84": 86.646413, "Y_WGS84": 27.837388 }, "geometry": { "type": "Point", "coordinates": [ 86.646412544639617, 27.837387566867651 ] } },
+{ "type": "Feature", "properties": { "Village": "THA", "Batiment": "011", "X_WGS84": 86.646131, "Y_WGS84": 27.837708 }, "geometry": { "type": "Point", "coordinates": [ 86.646131086393282, 27.837707563838205 ] } },
+{ "type": "Feature", "properties": { "Village": "THA", "Batiment": "010", "X_WGS84": 86.647735, "Y_WGS84": 27.836655 }, "geometry": { "type": "Point", "coordinates": [ 86.647735398397373, 27.836655125804999 ] } },
+{ "type": "Feature", "properties": { "Village": "THA", "Batiment": "009", "X_WGS84": 86.647940, "Y_WGS84": 27.837220 }, "geometry": { "type": "Point", "coordinates": [ 86.647940460833993, 27.837220456963458 ] } },
+{ "type": "Feature", "properties": { "Village": "THA", "Batiment": "008", "X_WGS84": 86.646758, "Y_WGS84": 27.837444 }, "geometry": { "type": "Point", "coordinates": [ 86.646758336199383, 27.837444455286942 ] } },
+{ "type": "Feature", "properties": { "Village": "THA", "Batiment": "007", "X_WGS84": 86.646963, "Y_WGS84": 27.837811 }, "geometry": { "type": "Point", "coordinates": [ 86.646963398636004, 27.837810673772104 ] } },
+{ "type": "Feature", "properties": { "Village": "THA", "Batiment": "006", "X_WGS84": 86.647072, "Y_WGS84": 27.837750 }, "geometry": { "type": "Point", "coordinates": [ 86.647071961102441, 27.837750230029631 ] } },
+{ "type": "Feature", "properties": { "Village": "THA", "Batiment": "005", "X_WGS84": 86.647506, "Y_WGS84": 27.837334 }, "geometry": { "type": "Point", "coordinates": [ 86.647506210968217, 27.837334233947473 ] } },
+{ "type": "Feature", "properties": { "Village": "THA", "Batiment": "004", "X_WGS84": 86.647611, "Y_WGS84": 27.837128 }, "geometry": { "type": "Point", "coordinates": [ 86.647610752602574, 27.837128013076118 ] } },
+{ "type": "Feature", "properties": { "Village": "THA", "Batiment": "003", "X_WGS84": 86.647542, "Y_WGS84": 27.836858 }, "geometry": { "type": "Point", "coordinates": [ 86.647542398457034, 27.836857792030695 ] } },
+{ "type": "Feature", "properties": { "Village": "THA", "Batiment": "002", "X_WGS84": 86.646143, "Y_WGS84": 27.837274 }, "geometry": { "type": "Point", "coordinates": [ 86.646143148889564, 27.837273789939573 ] } },
+{ "type": "Feature", "properties": { "Village": "THA", "Batiment": "001", "X_WGS84": 86.647136, "Y_WGS84": 27.837327 }, "geometry": { "type": "Point", "coordinates": [ 86.647136294415901, 27.837327122889459 ] } }
+]
+}
+}

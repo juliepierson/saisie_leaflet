@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg9493"
+   sodipodi:docname="bluecircle.svg"
+   inkscape:export-ydpi="90.000000"
+   inkscape:export-filename="/mnt/Travail/preshine/carte_terrain/leaflet/icons/bluecircle.png"
+   viewBox="0 0 50.000001 50.000001"
+   sodipodi:version="0.32"
+   inkscape:export-xdpi="90.000000"
+   inkscape:version="0.48.4 r9939"
+   version="1.1"
+   width="100%"
+   height="100%">
+  <defs
+     id="defs9495">
+    <linearGradient
+       id="linearGradient9413"
+       y2="42.883999"
+       gradientUnits="userSpaceOnUse"
+       y1="44.067001"
+       x2="23.389999"
+       x1="23.403"
+       inkscape:collect="always">
+      <stop
+         id="stop6508"
+         style="stop-color:#ffffff;stop-opacity:0"
+         offset="0" />
+      <stop
+         id="stop6510"
+         style="stop-color:#ffffff;stop-opacity:.87451"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9411"
+       y2="43.893002"
+       gradientUnits="userSpaceOnUse"
+       y1="42.755001"
+       x2="23.201"
+       x1="23.214001"
+       inkscape:collect="always">
+      <stop
+         id="stop9347"
+         style="stop-color:#5a5a5a"
+         offset="0" />
+      <stop
+         id="stop9349"
+         style="stop-color:#a9a9a9"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9409"
+       y2="43.710999"
+       gradientUnits="userSpaceOnUse"
+       y1="42.768002"
+       x2="23.441"
+       x1="23.35"
+       inkscape:collect="always">
+      <stop
+         id="stop5758"
+         style="stop-color:#828282"
+         offset="0" />
+      <stop
+         id="stop5760"
+         style="stop-color:#929292;stop-opacity:.35294"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9407"
+       y2="44"
+       gradientUnits="userSpaceOnUse"
+       y1="42.429001"
+       x2="23.200001"
+       x1="23.193001">
+      <stop
+         id="stop5744"
+         style="stop-color:#0085f6;stop-opacity:1;"
+         offset="0" />
+      <stop
+         id="stop5746"
+         style="stop-color:#58abf1;stop-opacity:1;"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9413"
+       id="linearGradient3001"
+       gradientUnits="userSpaceOnUse"
+       x1="23.403"
+       y1="44.067001"
+       x2="23.389999"
+       y2="42.883999"
+       gradientTransform="matrix(24.1625,0,0,18.685625,-538.24187,-790.03125)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9411"
+       id="linearGradient3004"
+       gradientUnits="userSpaceOnUse"
+       x1="23.214001"
+       y1="42.755001"
+       x2="23.201"
+       y2="43.893002"
+       gradientTransform="matrix(30.283437,0,0,30.283437,-680.90437,-1286.1594)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9409"
+       id="linearGradient3007"
+       gradientUnits="userSpaceOnUse"
+       x1="23.35"
+       y1="42.768002"
+       x2="23.441"
+       y2="43.710999"
+       gradientTransform="matrix(33.828125,0,0,33.828125,-763.50906,-1439.5938)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9407"
+       id="linearGradient3010"
+       gradientUnits="userSpaceOnUse"
+       x1="23.193001"
+       y1="42.429001"
+       x2="23.200001"
+       y2="44"
+       gradientTransform="matrix(31.25,0,0,31.25,-699.99812,-1325)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9407"
+       id="linearGradient3038"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(31.25,0,0,31.25,-699.99812,-1325)"
+       x1="23.193001"
+       y1="42.429001"
+       x2="23.200001"
+       y2="44" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9407-8"
+       id="linearGradient3038-0"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(31.25,0,0,31.25,-699.99812,-1325)"
+       x1="23.193001"
+       y1="42.429001"
+       x2="23.200001"
+       y2="44" />
+    <linearGradient
+       id="linearGradient9407-8"
+       y2="44"
+       gradientUnits="userSpaceOnUse"
+       y1="42.429001"
+       x2="23.200001"
+       x1="23.193001"
+       inkscape:collect="always">
+      <stop
+         id="stop5744-3"
+         style="stop-color:#adadad"
+         offset="0" />
+      <stop
+         id="stop5746-1"
+         style="stop-color:#f0f0f0"
+         offset="1" />
+    </linearGradient>
+    <filter
+       inkscape:collect="always"
+       id="filter3930"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.5886288"
+         id="feGaussianBlur3932" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9407-2"
+       id="linearGradient3038-2"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(31.25,0,0,31.25,-699.99812,-1325)"
+       x1="23.193001"
+       y1="42.429001"
+       x2="23.200001"
+       y2="44" />
+    <linearGradient
+       id="linearGradient9407-2"
+       y2="44"
+       gradientUnits="userSpaceOnUse"
+       y1="42.429001"
+       x2="23.200001"
+       x1="23.193001">
+      <stop
+         id="stop5744-34"
+         style="stop-color:#2d577b;stop-opacity:1;"
+         offset="0" />
+      <stop
+         id="stop5746-0"
+         style="stop-color:#59a0dc;stop-opacity:1;"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="44"
+       x2="23.200001"
+       y1="42.429001"
+       x1="23.193001"
+       gradientTransform="matrix(27.492844,0,0,27.492844,-612.68919,-1162.4523)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3968"
+       xlink:href="#linearGradient9407-2"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9407-4"
+       id="linearGradient3038-03"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(31.25,0,0,31.25,-699.99812,-1325)"
+       x1="23.193001"
+       y1="42.429001"
+       x2="23.200001"
+       y2="44" />
+    <linearGradient
+       id="linearGradient9407-4"
+       y2="44"
+       gradientUnits="userSpaceOnUse"
+       y1="42.429001"
+       x2="23.200001"
+       x1="23.193001">
+      <stop
+         id="stop5744-7"
+         style="stop-color:#0085f6;stop-opacity:1;"
+         offset="0" />
+      <stop
+         id="stop5746-4"
+         style="stop-color:#58abf1;stop-opacity:1;"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="44"
+       x2="23.200001"
+       y1="42.429001"
+       x1="23.193001"
+       gradientTransform="matrix(28.029581,0,0,28.029581,-625.09374,-1185.8779)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4002"
+       xlink:href="#linearGradient9407-4"
+       inkscape:collect="always" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     pagecolor="#ffffff"
+     inkscape:zoom="10.48"
+     inkscape:window-x="0"
+     borderopacity="1.0"
+     inkscape:current-layer="layer1"
+     inkscape:cx="5.7251908"
+     inkscape:cy="25.000002"
+     inkscape:window-y="24"
+     inkscape:window-height="1124"
+     inkscape:pageopacity="0.0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <g
+     id="layer1"
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer">
+    <path
+       style="fill:url(#linearGradient3038);fill-opacity:1.0"
+       d="M 25,0 C 11.1875,0 0,11.1875 0,25 0,38.8125 11.1875,50 25,50 38.8125,50 50,38.8125 50,25 50,11.1875 38.8125,0 25,0 z m 0.03125,4.875 c 11.129453,0 20.15625,9.026797 20.15625,20.15625 0,11.129453 -9.026797,20.1875 -20.15625,20.1875 C 13.901797,45.21875 4.875,36.160703 4.875,25.03125 4.875,13.901797 13.901797,4.875 25.03125,4.875 z"
+       id="path9325"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:url(#linearGradient4002);fill-opacity:1"
+       d="m 25.190839,2.5763369 c -12.389074,0 -22.4236637,10.0345901 -22.4236637,22.4236641 0,12.389075 10.0345897,22.423665 22.4236637,22.423665 12.389076,0 22.423665,-10.03459 22.423665,-22.423665 0,-12.389074 -10.034589,-22.4236641 -22.423665,-22.4236641 z m 0.02803,4.3726147 c 9.982525,0 18.07908,8.0965544 18.07908,18.0790804 0,9.982524 -8.096555,18.107108 -18.07908,18.107108 -9.982526,0 -18.0790797,-8.124584 -18.0790797,-18.107108 0,-9.982526 8.0965537,-18.0790804 18.0790797,-18.0790804 z"
+       id="path9325-9"
+       inkscape:connector-curvature="0" />
+  </g>
+  <metadata
+     id="metadata23">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title></dc:title>
+        <dc:date>2009-06-30T13:01:55</dc:date>
+        <dc:description>Grey glossy circle by Jean-Victor Balin. From OCAl 0.18 release.</dc:description>
+        <dc:source>https://openclipart.org/detail/26903/led-circle-grey-by-anonymous</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Anonymous</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>button</rdf:li>
+            <rdf:li>glossy</rdf:li>
+            <rdf:li>grey</rdf:li>
+            <rdf:li>round</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

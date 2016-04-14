@@ -1,0 +1,329 @@
+<!doctype html>
+<head>
+	<title>Preshine init à la main</title>
+	<meta charset="utf-8" />
+</head>
+
+<body>
+	<script>
+	
+		// si nécessaire, vide le local storage
+		localStorage.clear();
+	
+		name_localbat = "batiments_bas_dingjung";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } }, "features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"bas_dingjung" }, "geometry": { "type": "Point", "coordinates": [ 86.638221004632939, 27.882494498302041 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_bas_khumjung";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } }, "features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"bas_khumjung" }, "geometry": { "type": "Point", "coordinates": [ 86.714170572670227, 27.812090083077813 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_bas_mende";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } }, "features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"bas_mende" }, "geometry": { "type": "Point", "coordinates": [ 86.687447339329751, 27.819314352403758 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_benkar";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } }, "features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Chaurikharka", "Village":"benkar" }, "geometry": { "type": "Point", "coordinates": [ 86.717577416700223, 27.761951364170109 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_chambo";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"chambo" }, "geometry": { "type": "Point", "coordinates": [ 86.615064711376306, 27.935717586352855 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_chaserwa";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"chaserwa" }, "geometry": { "type": "Point", "coordinates": [ 86.62462564772369, 27.863083230938635 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_chheplung";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Chaurikharka", "Village":"chheplung" }, "geometry": { "type": "Point", "coordinates": [ 86.718051301020168, 27.7043794816013 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_chheplung_west";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Chaurikharka", "Village":"chheplung_west" }, "geometry": { "type": "Point", "coordinates": [ 86.706921423343218, 27.705842249477762 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_chomare";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"chomare" }, "geometry": { "type": "Point", "coordinates": [ 86.80534847736881, 27.867736827157028 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_chukung";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"chukung" }, "geometry": { "type": "Point", "coordinates": [ 86.871442532319705, 27.904398094901996 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_chule";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"chule" }, "geometry": { "type": "Point", "coordinates": [ 86.609615041696713, 27.945295525645513 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_chule_goth";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"chule_goth" }, "geometry": { "type": "Point", "coordinates": [ 86.606778139619109, 27.942059602808754 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_deboche";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"Deboche" }, "geometry": { "type": "Point", "coordinates": [ 86.77275292076574, 27.840958932273018 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_dingboche";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"Dingboche" }, "geometry": { "type": "Point", "coordinates": [ 86.830835769172381, 27.891573334621008 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_dingjung";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"dingjung" }, "geometry": { "type": "Point", "coordinates": [ 86.637362889783262, 27.887883064842697 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_dole";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"dole" }, "geometry": { "type": "Point", "coordinates": [ 86.73041712023462, 27.866590419574436 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_dughla";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"dughla" }, "geometry": { "type": "Point", "coordinates": [ 86.80552138110717, 27.923323854354649 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_gokyo_hotel_complex";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"gokyo_hotel_complex" }, "geometry": { "type": "Point", "coordinates": [ 86.694302652363788, 27.953630980925698 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_gorak_shep";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"gorak_shep" }, "geometry": { "type": "Point", "coordinates": [ 86.828677674364087, 27.980745737467522 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_haut_lukla";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Chaurikharka", "Village":"haut_lukla" }, "geometry": { "type": "Point", "coordinates": [ 86.718166570179079, 27.69494455613065 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_high_chule";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"high_chule" }, "geometry": { "type": "Point", "coordinates": [ 86.607841177417953, 27.949549603854258 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_high_chule_goth";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"high_chule_goth" }, "geometry": { "type": "Point", "coordinates": [ 86.601147561398463, 27.950047414689301 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_high_khusum";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"high_khusum" }, "geometry": { "type": "Point", "coordinates": [ 86.638717302400508, 27.919495962533212 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_high_macchermo";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"high_macchermo" }, "geometry": { "type": "Point", "coordinates": [ 86.712492766024113, 27.915104878159649 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_high_phortse";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"high_phortse" }, "geometry": { "type": "Point", "coordinates": [ 86.750544396148825, 27.862066953836319 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_high_thamo";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"high_thamo" }, "geometry": { "type": "Point", "coordinates": [ 86.630734913145915, 27.825886952325252 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_high_thamo2";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"high_thamo2" }, "geometry": { "type": "Point", "coordinates": [ 86.665738314401608, 27.828129612862114 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_hilajung";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"hilajung" }, "geometry": { "type": "Point", "coordinates": [ 86.647333672028907, 27.844846204650448 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_hungmo";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"hungmo" }, "geometry": { "type": "Point", "coordinates": [ 86.642101732982837, 27.846097574188811 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_jorsale";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Chaurikharka", "Village":"jorsale" }, "geometry": { "type": "Point", "coordinates": [ 86.722636452007933, 27.777896271196809 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_kamthuwa";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"kamthuwa" }, "geometry": { "type": "Point", "coordinates": [ 86.632124546895028, 27.859737281232857 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_khumjung";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"Khumjung" }, "geometry": { "type": "Point", "coordinates": [ 86.719319261768192, 27.820993570468897 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_khure_goth";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"khure_goth" }, "geometry": { "type": "Point", "coordinates": [ 86.62091782311208, 27.821780932926178 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_khusum";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"khusum" }, "geometry": { "type": "Point", "coordinates": [ 86.636869793936796, 27.904754581196567 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_kisibook";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"kisibook" }, "geometry": { "type": "Point", "coordinates": [ 86.687748319911222, 27.814163141154747 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_koshigaun";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Chaurikharka", "Village":"koshigaun" }, "geometry": { "type": "Point", "coordinates": [ 86.714311457197752, 27.721131982281719 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_koshigaun_west";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Chaurikharka", "Village":"koshigaun_west" }, "geometry": { "type": "Point", "coordinates": [ 86.70639630828596, 27.719057342500545 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_kunde";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"kunde" }, "geometry": { "type": "Point", "coordinates": [ 86.706024885440584, 27.822805989191359 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_langmuche";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"Langmuche" }, "geometry": { "type": "Point", "coordinates": [ 86.613912019787193, 27.864447599579748 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_lobuche";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"lobuche" }, "geometry": { "type": "Point", "coordinates": [ 86.810356281939335, 27.94827113672595 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_lodge1";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Chaurikharka", "Village":"lodge1" }, "geometry": { "type": "Point", "coordinates": [ 86.70015896602051, 27.780253281867559 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_lukla";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Chaurikharka", "Village":"lukla" }, "geometry": { "type": "Point", "coordinates": [ 86.728809755851742, 27.687425702417389 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_luza";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"luza" }, "geometry": { "type": "Point", "coordinates": [ 86.717807955018245, 27.89337609680781 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_luza_east";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"luza_east" }, "geometry": { "type": "Point", "coordinates": [ 86.726770132123562, 27.893786448849003 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_macchermo";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"macchermo" }, "geometry": { "type": "Point", "coordinates": [ 86.714926226045492, 27.903155856968407 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_macchermo_east";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"macchermo_east" }, "geometry": { "type": "Point", "coordinates": [ 86.723225605487144, 27.912665886183511 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_mende";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"mende" }, "geometry": { "type": "Point", "coordinates": [ 86.684988263939672, 27.825028921578671 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_middle_thamo";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"middle_thamo" }, "geometry": { "type": "Point", "coordinates": [ 86.669254023748337, 27.823576250357064 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_milinggo";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"milinggo" }, "geometry": { "type": "Point", "coordinates": [ 86.778638051712349, 27.845126520217956 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_mingmo";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"mingmo" }, "geometry": { "type": "Point", "coordinates": [ 86.635019083552081, 27.860728053797509 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_monjo";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Chaurikharka", "Village":"monjo" }, "geometry": { "type": "Point", "coordinates": [ 86.723379297698656, 27.769839050713088 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_nachipang";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Chaurikharka", "Village":"nachipang" }, "geometry": { "type": "Point", "coordinates": [ 86.716091725318705, 27.710196432606413 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_namche";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"namche" }, "geometry": { "type": "Point", "coordinates": [ 86.711493766646626, 27.804273358486771 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_pangboche";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"pangboche" }, "geometry": { "type": "Point", "coordinates": [ 86.789537391071562, 27.854576529178953 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_phakding";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Chaurikharka", "Village":"phakding" }, "geometry": { "type": "Point", "coordinates": [ 86.710789344008845, 27.736754009306996 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_pheriche";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"pheriche" }, "geometry": { "type": "Point", "coordinates": [ 86.818252219324634, 27.893848623794689 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_phortse";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"phortse" }, "geometry": { "type": "Point", "coordinates": [ 86.748245416812779, 27.847736756960686 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_phurte";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"phurte" }, "geometry": { "type": "Point", "coordinates": [ 86.69134727920607, 27.812962375863293 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_sanassa";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"sanassa" }, "geometry": { "type": "Point", "coordinates": [ 86.730839773817308, 27.823873583043355 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_summer_crops_thamo";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"summer_crops_thamo" }, "geometry": { "type": "Point", "coordinates": [ 86.602942238164303, 27.824380474463666 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_tarngga";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"tarngga" }, "geometry": { "type": "Point", "coordinates": [ 86.640366291757076, 27.868863307226352 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_tashinga";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"tashinga" }, "geometry": { "type": "Point", "coordinates": [ 86.738857384203754, 27.830567583850979 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_tengboche";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"tengboche" }, "geometry": { "type": "Point", "coordinates": [ 86.764690483484159, 27.835907811284628 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_thame";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"Thame" }, "geometry": { "type": "Point", "coordinates": [ 86.648934632569365, 27.830745992495523 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_thamo";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"thamo" }, "geometry": { "type": "Point", "coordinates": [ 86.678757325516244, 27.822364272488841 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_thamtang";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"Thamtang" }, "geometry": { "type": "Point", "coordinates": [ 86.680140555423151, 27.823972715077982 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_thokchambo";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"thokchambo" }, "geometry": { "type": "Point", "coordinates": [ 86.617209998500442, 27.937488413257029 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_thore";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"thore" }, "geometry": { "type": "Point", "coordinates": [ 86.732812157203227, 27.887096328681661 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_thyangmoche";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"thyangmoche" }, "geometry": { "type": "Point", "coordinates": [ 86.646987864552173, 27.837564117387529 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_toktok";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Chaurikharka", "Village":"toktok" }, "geometry": { "type": "Point", "coordinates": [ 86.710392305794841, 27.750447263872573 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_unknown1";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"unknown1" }, "geometry": { "type": "Point", "coordinates": [ 86.720391905330587, 27.940438779643017 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_unknown2";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"unknown2" }, "geometry": { "type": "Point", "coordinates": [ 86.71687299406274, 27.918262379016618 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_unknown3";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"unknown3" }, "geometry": { "type": "Point", "coordinates": [ 86.721839173659134, 27.923340818146595 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_unknown4";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"unknown4" }, "geometry": { "type": "Point", "coordinates": [ 86.851129544982783, 27.900411058828649 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_west_khusum";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"west_khusum" }, "geometry": { "type": "Point", "coordinates": [ 86.632041296946895, 27.902700298376395 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_west_thamo";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Namche", "Village":"west_thamo" }, "geometry": { "type": "Point", "coordinates": [ 86.659052703184827, 27.825275297909247 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_worshyo";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"worshyo" }, "geometry": { "type": "Point", "coordinates": [ 86.814614836976773, 27.869831398114449 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+		
+		name_localbat = "batiments_zonglha";
+		local_bat = '{"type":"FeatureCollection","crs":{ "type":"name","properties":{ "name":"urn:ogc:def:crs:OGC:1.3:CRS84" } },"features": [{ "type": "Feature", "properties": { "Foyers": "W0E0S0", "Notes": "notes" , "DISTRICT": "Kumjung", "Village":"zonglha" }, "geometry": { "type": "Point", "coordinates": [ 86.773332468481271, 27.93925355269192 ] } }]}';
+		localStorage.setItem(name_localbat, local_bat);
+
+   
+	</script>
+
+</body>
+
