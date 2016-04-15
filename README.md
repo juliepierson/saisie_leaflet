@@ -16,8 +16,8 @@ test02.html
 ---------------
 test03.html
 ---------------
-- Récupère le contenu d'une variable batiments dans le local storage,
-- la modifie suivant ajouts/suppression -> on peut rafraîchir la page
+- Récupère le contenu d'une variable batiments dans le local storage
+- la modifie suivant ajouts/suppression : on peut rafraîchir la page
 ---------------
 test03_init.html
 ---------------
